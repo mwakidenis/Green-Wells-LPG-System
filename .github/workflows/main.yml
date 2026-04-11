@@ -23,7 +23,7 @@ jobs:
           git config user.email "mwakidenice@gmail.com"
           git add "$TIMESTAMP_FILE"
           if ! git diff --cached --quiet; then
-            git commit -m "Update timestamp: $(date -u)"
+            git commit -m "python file: $(date -u)"
           fi
       - name: Push changes
         run: git push origin HEAD
