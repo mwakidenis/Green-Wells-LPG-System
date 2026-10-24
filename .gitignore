@@ -24,3 +24,10 @@ dist-ssr
 *.sw?
 
 
+
+# environment files may contain secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
